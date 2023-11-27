@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>\
+  <link rel="stylesheet" href="./style.scss">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="left">
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="right">
+        <form class="w_form" name="weather_form">
+          <img src="./icons/search.svg" alt="#" width="25px">
+          <input type="text" placeholder="Search for your preffered city...">
+          <button>Show</button>
+        </form>
+
+      </div>
+    </header>
+
+    <div class="first">
+      <div class="time">
+        <h3 id="town">None</h3>
+        <h2 id="time">09:08</h2>
+        <p id="day">thursday, 34 August</p>
+      </div>
+      <div class="graduce">
+        <div class="g">
+          <h2>24c</h2>
+          <p>feels like 22</p>
+        </div>
+        <div class="icn">
+          <img src="./icons/sunny.svg" alt="">
+          <p>sunny</p>
+        </div>
+        <div class="wind">
+
+          <div class="win_first">
+            <div class="w_f">
+              <img src="./icons/humidity 1.svg" alt="">
+              <p>41</p>
+              <p>humidity</p>
+            </div>
+            <div class="w_sec">
+              <img src="./icons/vetreno.svg" alt="">
+              <p>2 khm</p>
+              <p>wind</p>
+            </div>
+
+          </div>
+
+          <div class="win_second">
+            <div class="w_th">
+              <img src="./icons/pressure-white 1.svg" alt="">
+              <p>997hpa</p>
+              <p>pressure</p>
+            </div>
+            <div class="w_fth">
+              <img src="./icons/uv-white 1.svg" alt="">
+              <p>8</p>
+              <p>uv</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="second">
+      <div class="forcast_d">
+        <h2>5 Days Forcast:</h2>
+
+        <div class="f">
+          <img id="one_i" width="40px" src="./icons/sunny.svg" alt="">
+          <p id="one_g">20c</p>
+          <p id="one_d">1</p>
+        </div>
+        <div class="f">
+          <img id="two_i" width="40px" src="./icons/sunny.svg" alt="">
+          <p id="two_g">20c</p>
+          <p id="two_d">1</p>
+        </div>
+        <div class="f">
+          <img id="three_i" width="40px" src="./icons/sunny.svg" alt="">
+          <p id="three_g">20c</p>
+          <p id="three_d">1</p>
+        </div>
+        <div class="f">
+          <img id="four_i" width="40px" src="./icons/sunny.svg" alt="">
+          <p id="four_g">20c</p>
+          <p id="four_d">1</p>
+        </div>
+        <div class="f">
+          <img id="five_i" width="40px" src="./icons/sunny.svg" alt="">
+          <p id="five_g">20c</p>
+          <p id="five_d">1</p>
+        </div>
+      </div>
+      <div class="forcast_h">
+        <h2>Hourly Forcasts:</h2>
+        <div class="h_box">
+          <div class="h">
+            <p id="time_f">18:00</p>
+            <img id="img_f" width="70px" class="wethe" src="./icons/sunny.svg" alt="">
+            <p id="graduce_f">26c</p>
+            <img width="30px" src="./icons/wind_img.svg" alt="">
+            <p id="khm_f">2khm</p>
+          </div>
+          <div class="h">
+            <p id="time_s">18:00</p>
+            <img id="img_s" width="70px" class="wethe" src="./icons/sunny.svg" alt="">
+            <p id="graduce_s">26c</p>
+            <img width="30px" src="./icons/wind_img.svg" alt="">
+            <p id="khm_s">2khm</p>
+          </div>
+          <div class="h">
+            <p id="time_t">18:00</p>
+            <img id="img_t" width="70px" class="wethe" src="./icons/sunny.svg" alt="">
+            <p id="graduce_t">26c</p>
+            <img width="30px" src="./icons/wind_img.svg" alt="">
+            <p id="khm_t">2khm</p>
+          </div>
+          <div class="h">
+            <p id="time_fth">18:00</p>
+            <img id="img_fth" width="70px" class="wethe" src="./icons/sunny.svg" alt="">
+            <p id="graduce_fth">26c</p>
+            <img width="30px" src="./icons/wind_img.svg" alt="">
+            <p id="khm_fth">2khm</p>
+          </div>
+          <div class="h">
+            <p id="time_fiv">18:00</p>
+            <img id="img_fiv" width="70px" class="wethe" src="./icons/sunny.svg" alt="">
+            <p id="graduce_fiv">26c</p>
+            <img width="30px" src="./icons/wind_img.svg" alt="">
+            <p id="khm_fiv">2khm</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
